@@ -38,7 +38,7 @@ def main():
                     running = False
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     x, y = event.pos
-                    print("X=", x, ", Y=", y)
+
                     if is_mole_hit(x, y, current_x, current_y):
                         current_x = random.randrange(0,20)
                         current_y = random.randrange(0,16)
